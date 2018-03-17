@@ -15,6 +15,7 @@ passport.deserializeUser((id, done) => {
   });
 });
 
+// Sets up service for google oauth
 passport.use(
   new GoogleStrategy(
     {

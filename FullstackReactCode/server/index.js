@@ -40,5 +40,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
+// this allows us to do dynamic ports
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
