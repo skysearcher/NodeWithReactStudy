@@ -10,6 +10,7 @@ passport.serializeUser((user, done) => {
 });
 
 passport.deserializeUser((id, done) => {
+  // This uses find by id not findone
   User.findById(id).then(user => {
     done(null, user);
   });
