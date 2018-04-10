@@ -25,7 +25,7 @@ passport.use(
       callbackURL: '/auth/google/callback',
       proxy: true
     },
-    // (accessToken, refreshToken, profile, done) => {
+    // (accessToken, refreshToken, profile, done) => { OLD CODE JUST SHOWING THE DIFFERENT WAY OF GRABBING STUFF
     //   User.findOne({ googleId: profile.id }).then( existingUser => {
     //     if (existingUser) {
     //       done(null, existingUser);
