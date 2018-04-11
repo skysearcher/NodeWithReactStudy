@@ -14,13 +14,13 @@ class SurveyNew extends Component {
           onCancel={() => this.setState({ showFormReview: false })}
         />
       );
+    } else {
+      return (
+        <SurveyForm
+          onSurveySubmit={() => this.setState({ showFormReview: true })}
+        />
+      );
     }
-
-    return (
-      <SurveyForm
-        onSurveySubmit={() => this.setState({ showFormReview: true })}
-      />
-    );
   }
 
   render() {
